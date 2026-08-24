@@ -1,71 +1,73 @@
 {
-    "cli_default_open_behavior": "new_window",
-    "languages": {
-        "Slint": {
-            "tab_size": 2,
-            "format_on_save": "on"
+  "lsp_results_location": "picker",
+  "cli_default_open_behavior": "new_window",
+  "languages": {
+    "Slint": {
+      "tab_size": 2,
+      "format_on_save": "on",
+    },
+    "Rust": {
+      "formatter": "language_server",
+      "format_on_save": "on",
+    },
+  },
+  "proxy": "",
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "button": false,
+    "dock": "left",
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "agent_ui_font_size": 15,
+  "ui_font_family": ".SystemUIFont",
+  "buffer_line_height": "comfortable",
+  "buffer_font_weight": 400,
+  "buffer_font_family": "JetBrainsMono Nerd Font Mono",
+  "icon_theme": "Colored Zed Icons Theme Dark",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "vim_mode": true,
+  "base_keymap": "JetBrains",
+  "ui_font_size": 16,
+  "buffer_font_size": 13,
+  "theme": {
+    "mode": "system",
+    "light": "Ayu Light",
+    "dark": "Catppuccin Mocha",
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "check": {
+          "command": "clippy",
         },
-        "Rust": {
-            "formatter": "language_server",
-            "format_on_save": "on"
-        }
+      },
     },
-    "proxy": "",
-    "project_panel": {
-        "dock": "left"
-    },
-    "outline_panel": {
-        "dock": "left"
-    },
-    "collaboration_panel": {
-        "dock": "left"
-    },
-    "agent": {
-        "dock": "right",
-        "favorite_models": [],
-        "model_parameters": []
-    },
-    "git_panel": {
-        "dock": "left"
-    },
-    "agent_ui_font_size": 15,
-    "ui_font_family": ".SystemUIFont",
-    "buffer_line_height": "comfortable",
-    "buffer_font_weight": 400,
-    "buffer_font_family": "JetBrainsMono Nerd Font Mono",
-    "icon_theme": "Colored Zed Icons Theme Dark",
-    "telemetry": {
-        "diagnostics": false,
-        "metrics": false
-    },
-    "vim_mode": true,
-    "base_keymap": "JetBrains",
-    "ui_font_size": 16,
-    "buffer_font_size": 13,
-    "theme": {
-        "mode": "system",
-        "light": "Ayu Light",
-        "dark": "Catppuccin Mocha"
-    },
-    "lsp": {
-        "rust-analyzer": {
-            "initialization_options": {
-                "check": {
-                    "command": "clippy"
-                }
-            }
-        }
-    },
-    "auto_install_extensions": {
-        "biome": true,
-        "catppuccin": true,
-        "catppuccin-icons": true,
-        "colored-zed-icons-theme": true,
-        "git-firefly": true,
-        "graphql": true,
-        "html": true,
-        "jetbrains-new-ui-icons": true,
-        "slint": true,
-        "toml": true
-    }
+  },
+  "auto_install_extensions": {
+    "biome": true,
+    "catppuccin": true,
+    "catppuccin-icons": true,
+    "colored-zed-icons-theme": true,
+    "git-firefly": true,
+    "graphql": true,
+    "html": true,
+    "jetbrains-new-ui-icons": true,
+    "slint": true,
+    "toml": true,
+  },
 }

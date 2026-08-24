@@ -1,10 +1,89 @@
 [
     {
+        "context": "VimControl && !menu",
+        "bindings": {
+            "w": "vim::NextSubwordStart",
+            "b": "vim::PreviousSubwordStart",
+            "e": "vim::NextSubwordEnd"
+        }
+    },
+    {
+        "context": "Editor && vim_mode == normal",
+        "bindings": {
+            "shift-h": "pane::ActivatePreviousItem",
+            "shift-l": "pane::ActivateNextItem",
+            ", w": "workspace::Save",
+            ", q": "pane::CloseActiveItem",
+            "ctrl-p": "file_finder::Toggle",
+            ", f f": "editor::Format",
+            "r": "editor::Redo",
+            "shift-j": "editor::MoveLineDown",
+            "shift-k": "editor::MoveLineUp",
+            "ctrl-y": "editor::JoinLines",
+            ";": "editor::Hover",
+            ", d": "editor::GoToDefinition",
+            ", u": [
+                "action::Sequence",
+                [
+                    "editor::FindAllReferences",
+                    "picker::SetPreviewBelow"
+                ]
+            ],
+            "ctrl-f": "text_finder::Toggle"
+        }
+    },
+    {
+        "context": "Dock",
+        "bindings": {
+            "ctrl-h": "workspace::ActivatePaneLeft",
+            "ctrl-l": "workspace::ActivatePaneRight",
+            "ctrl-k": "workspace::ActivatePaneUp",
+            "ctrl-j": "workspace::ActivatePaneDown"
+        }
+    },
+    {
+        "context": "ProjectPanel && not_editing",
+        "bindings": {
+            "o": "project_panel::OpenPermanent",
+            "s": "project_panel::OpenSplitVertical",
+            "i": "project_panel::OpenSplitHorizontal"
+        }
+    },
+    {
+        "context": "Editor && vim_mode == normal",
+        "bindings": {
+            ", n t": "pane::RevealInProjectPanel"
+        }
+    },
+    {
         "context": "Workspace",
         "bindings": {}
     },
     {
         "context": "Editor && vim_mode == insert",
         "bindings": {}
+    },
+    {
+        "bindings": {
+            "alt-1": "project_panel::Toggle"
+        }
+    },
+    {
+        "context": "Pane",
+        "unbind": {
+            "alt-1": "project_panel::ToggleFocus"
+        }
+    },
+    {
+        "context": "!Editor && !Terminal",
+        "unbind": {
+            "space f": "file_finder::Toggle"
+        }
+    },
+    {
+        "context": "(vim_mode == helix_normal || vim_mode == helix_select) && !menu",
+        "unbind": {
+            "space f": "file_finder::Toggle"
+        }
     }
 ]
