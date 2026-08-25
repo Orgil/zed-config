@@ -29,7 +29,8 @@
                     "picker::SetPreviewBelow"
                 ]
             ],
-            "ctrl-f": "text_finder::Toggle"
+            "ctrl-f": "text_finder::Toggle",
+            ", ,": "pane::AlternateFile"
         }
     },
     {
