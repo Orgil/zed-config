@@ -1,79 +1,126 @@
 {
-    "edit_predictions": {
-        "allow_data_collection": "no"
-    },
-    "ui_font_weight": 400,
-    "lsp_results_location": "picker",
-    "cli_default_open_behavior": "new_window",
-    "languages": {
-        "Slint": {
-            "tab_size": 2,
-            "format_on_save": "on"
-        },
-        "Rust": {
-            "formatter": "language_server",
-            "format_on_save": "on"
+  "wsl_connections": [
+    {
+      "distro_name": "archlinux",
+      "user": null,
+      "projects": [
+        {
+          "paths": [
+            "/home/orgil/projects/memorysport-projects/memorysport-api/./"
+          ]
         }
-    },
-    "proxy": "",
-    "project_panel": {
-        "dock": "left"
-    },
-    "outline_panel": {
-        "dock": "left"
-    },
-    "collaboration_panel": {
-        "button": false,
-        "dock": "left"
-    },
-    "agent": {
-        "dock": "right",
-        "favorite_models": [],
-        "model_parameters": []
-    },
-    "git_panel": {
-        "dock": "left"
-    },
-    "agent_ui_font_size": 15,
-    "ui_font_family": "JetBrainsMono Nerd Font Mono",
-    "buffer_line_height": "comfortable",
-    "buffer_font_weight": 400,
-    "buffer_font_family": "JetBrainsMono Nerd Font Mono",
-    "icon_theme": "Colored Zed Icons Theme Dark",
-    "telemetry": {
-        "diagnostics": false,
-        "metrics": false
-    },
-    "vim_mode": true,
-    "base_keymap": "JetBrains",
-    "ui_font_size": 15,
-    "buffer_font_size": 14,
-    "theme": {
-        "mode": "system",
-        "light": "Ayu Light",
-        "dark": "Catppuccin Macchiato"
-    },
-    "lsp": {
-        "rust-analyzer": {
-            "initialization_options": {
-                "check": {
-                    "command": "clippy"
-                }
-            }
-        }
-    },
-    "auto_install_extensions": {
-        "biome": true,
-        "catppuccin": true,
-        "catppuccin-icons": true,
-        "colored-zed-icons-theme": true,
-        "git-firefly": true,
-        "golangci-lint": true,
-        "graphql": true,
-        "html": true,
-        "jetbrains-new-ui-icons": true,
-        "slint": true,
-        "sql": true,
-        "toml": true
+      ]
     }
+  ],
+  "file_scan_exclusions": [
+    ".devspace",
+    ".idea",
+    "**/.git"
+  ],
+  "edit_predictions": {
+    "allow_data_collection": "no"
+  },
+  "ui_font_weight": 400,
+  "lsp_results_location": "picker",
+  "cli_default_open_behavior": "new_window",
+  "languages": {
+    "Slint": {
+      "format_on_save": "on"
+    },
+    "Rust": {
+      "formatter": "language_server",
+      "format_on_save": "on"
+    },
+    "TypeScript": {
+      "prettier": { "allowed": false },
+      "language_servers": [
+        "vtsls",
+        "!typescript-language-server",
+        "!eslint",
+        "!tailwindcss-language-server",
+        "..."
+      ]
+    },
+    "TSX": {
+      "language_servers": [
+        "vtsls",
+        "!typescript-language-server",
+        "!eslint",
+        "..."
+      ]
+    },
+    "JavaScript": {
+      "language_servers": [
+        "vtsls",
+        "!typescript-language-server",
+        "!eslint",
+        "!tailwindcss-language-server",
+        "..."
+      ]
+    }
+  },
+  "proxy": "",
+  "project_panel": {
+    "hide_gitignore": false,
+    "hide_hidden": false,
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "button": false,
+    "dock": "left"
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "agent_ui_font_size": 15,
+  "ui_font_family": "JetBrainsMono Nerd Font Mono",
+  "buffer_line_height": "comfortable",
+  "buffer_font_weight": 400,
+  "buffer_font_family": "JetBrainsMono Nerd Font Mono",
+  "icon_theme": "Colored Zed Icons Theme Dark",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "vim_mode": true,
+  "base_keymap": "JetBrains",
+  "ui_font_size": 15,
+  "buffer_font_size": 14,
+  "tab_size": 2,
+  "theme": {
+    "mode": "system",
+    "light": "Ayu Light",
+    "dark": "Catppuccin Macchiato"
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "check": {
+          "command": "clippy"
+        }
+      }
+    }
+  },
+  "auto_install_extensions": {
+    "biome": true,
+    "catppuccin": true,
+    "catppuccin-icons": true,
+    "colored-zed-icons-theme": true,
+    "git-firefly": true,
+    "golangci-lint": true,
+    "graphql": true,
+    "html": true,
+    "jetbrains-new-ui-icons": true,
+    "slint": true,
+    "sql": true,
+    "toml": true
+  }
 }

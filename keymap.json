@@ -34,6 +34,12 @@
         }
     },
     {
+        "context": "ProjectPanel",
+        "bindings": {
+            "shift-i": "project_panel::ToggleHideGitIgnore"
+        }
+    },
+    {
         "context": "Dock",
         "bindings": {
             "ctrl-h": "workspace::ActivatePaneLeft",
@@ -47,7 +53,13 @@
         "bindings": {
             "o": "project_panel::OpenPermanent",
             "s": "project_panel::OpenSplitVertical",
-            "i": "project_panel::OpenSplitHorizontal"
+            "i": "project_panel::OpenSplitHorizontal",
+            "m a": "project_panel::NewFile",
+            "m r": "project_panel::Rename",
+            "m o": "project_panel::Open",
+            "m d": "project_panel::Delete",
+            "m c": "project_panel::Copy",
+            "m p": "project_panel::Paste"
         }
     },
     {
