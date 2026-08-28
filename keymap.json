@@ -30,7 +30,11 @@
                 ]
             ],
             "ctrl-f": "text_finder::Toggle",
-            ", ,": "pane::AlternateFile"
+            ", ,": "pane::AlternateFile",
+            "ctrl-h": "workspace::ActivatePaneLeft",
+            "ctrl-j": "workspace::ActivatePaneDown",
+            "ctrl-k": "workspace::ActivatePaneUp",
+            "ctrl-l": "workspace::ActivatePaneRight"
         }
     },
     {

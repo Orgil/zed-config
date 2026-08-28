@@ -6,6 +6,11 @@
       "projects": [
         {
           "paths": [
+            "/home/orgil/projects/memorysport-projects/memorysport-admin/./"
+          ]
+        },
+        {
+          "paths": [
             "/home/orgil/projects/memorysport-projects/memorysport-api/./"
           ]
         }
