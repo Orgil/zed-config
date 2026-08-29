@@ -10,6 +10,7 @@
     {
         "context": "Editor && vim_mode == normal",
         "bindings": {
+            ", n t": "pane::RevealInProjectPanel",
             "shift-h": "pane::ActivatePreviousItem",
             "shift-l": "pane::ActivateNextItem",
             ", w": "workspace::Save",
@@ -20,6 +21,7 @@
             "shift-j": "editor::MoveLineDown",
             "shift-k": "editor::MoveLineUp",
             "ctrl-y": "editor::JoinLines",
+            ", a": "editor::ToggleCodeActions",
             ";": "editor::Hover",
             ", d": "editor::GoToDefinition",
             ", u": [
@@ -35,12 +37,6 @@
             "ctrl-j": "workspace::ActivatePaneDown",
             "ctrl-k": "workspace::ActivatePaneUp",
             "ctrl-l": "workspace::ActivatePaneRight"
-        }
-    },
-    {
-        "context": "ProjectPanel",
-        "bindings": {
-            "shift-i": "project_panel::ToggleHideGitIgnore"
         }
     },
     {
@@ -63,13 +59,8 @@
             "m o": "project_panel::Open",
             "m d": "project_panel::Delete",
             "m c": "project_panel::Copy",
-            "m p": "project_panel::Paste"
-        }
-    },
-    {
-        "context": "Editor && vim_mode == normal",
-        "bindings": {
-            ", n t": "pane::RevealInProjectPanel"
+            "m p": "project_panel::Paste",
+            "shift-i": "project_panel::ToggleHideGitIgnore"
         }
     },
     {
