@@ -131,6 +131,7 @@
         "golangci-lint": true,
         "graphql": true,
         "html": true,
+        "ini": true,
         "jetbrains-new-ui-icons": true,
         "nginx": true,
         "scss": true,
