@@ -73,7 +73,7 @@
     },
     "proxy": "",
     "project_panel": {
-        "hide_gitignore": false,
+        "hide_gitignore": true,
         "hide_hidden": false,
         "dock": "left"
     },

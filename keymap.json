@@ -20,7 +20,7 @@
             "r": "editor::Redo",
             "shift-j": "editor::MoveLineDown",
             "shift-k": "editor::MoveLineUp",
-            "ctrl-y": "editor::JoinLines",
+            "shift-y": "editor::JoinLines",
             ", a": "editor::ToggleCodeActions",
             ";": "editor::Hover",
             ", d": "editor::GoToDefinition",
