@@ -4,7 +4,9 @@
         "bindings": {
             "w": "vim::NextSubwordStart",
             "b": "vim::PreviousSubwordStart",
-            "e": "vim::NextSubwordEnd"
+            "e": "vim::NextSubwordEnd",
+            "] ]": "editor::GoToDiagnostic",
+            "[ [": "editor::GoToPreviousDiagnostic"
         }
     },
     {
