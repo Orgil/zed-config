@@ -35,7 +35,33 @@
         }
     },
     {
-        "context": "VimControl && !menu",
+        "context": "vim_mode == visual && !VimWaiting",
+        "bindings": {
+            "shift-s": "vim::PushAddSurrounds",
+            "\"": [
+                "vim::PushAddSurrounds",
+                ""
+            ],
+            "{": [
+                "vim::PushAddSurrounds",
+                {}
+            ],
+            "}": [
+                "vim::PushAddSurrounds",
+                {}
+            ],
+            "[": [
+                "vim::PushAddSurrounds",
+                []
+            ],
+            "]": [
+                "vim::PushAddSurrounds",
+                []
+            ]
+        }
+    },
+    {
+        "context": "VimControl && !menu && vim_mode == normal",
         "bindings": {
             "w": "vim::NextSubwordStart",
             "b": "vim::PreviousSubwordStart",
