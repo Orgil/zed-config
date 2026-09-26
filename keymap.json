@@ -1,5 +1,39 @@
 [
     {
+        "context": "Editor && VimControl && !VimWaiting && !menu",
+        "bindings": {
+            "ctrl-shift-h": [
+                "workspace::MoveItemToPaneInDirection",
+                {
+                    "direction": "left",
+                    "focus": true
+                }
+            ],
+            "ctrl-shift-l": [
+                "workspace::MoveItemToPaneInDirection",
+                {
+                    "direction": "right",
+                    "focus": true
+                }
+            ],
+            "ctrl-shift-k": [
+                "workspace::MoveItemToPaneInDirection",
+                {
+                    "direction": "up",
+                    "focus": true
+                }
+            ],
+            "ctrl-shift-j": [
+                "workspace::MoveItemToPaneInDirection",
+                {
+                    "direction": "down",
+                    "focus": true
+                }
+            ],
+            "space space": "editor::ToggleFold"
+        }
+    },
+    {
         "context": "VimControl && !menu",
         "bindings": {
             "w": "vim::NextSubwordStart",
@@ -19,6 +53,7 @@
             ", q": "pane::CloseActiveItem",
             "ctrl-p": "file_finder::Toggle",
             ", f f": "editor::Format",
+            ", r": "editor::Rename",
             "r": "editor::Redo",
             "shift-j": "editor::MoveLineDown",
             "shift-k": "editor::MoveLineUp",
