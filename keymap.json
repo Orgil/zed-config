@@ -102,22 +102,25 @@
     },
     {
         "context": "Workspace",
-        "bindings": {}
+        "bindings": {
+            "cmd-1": "project_panel::ToggleFocus",
+            "cmd-2": "git_panel::ToggleFocus",
+            "cmd-3": "diagnostics::Deploy",
+            "cmd-4": "outline_panel::ToggleFocus"
+        }
+    },
+    {
+        "context": "GitPanel || ChangesList || Editor",
+        "bindings": {
+            "cmd-1": "project_panel::ToggleFocus",
+            "cmd-2": "git_panel::ToggleFocus",
+            "cmd-3": "diagnostics::Deploy",
+            "cmd-4": "outline_panel::ToggleFocus"
+        }
     },
     {
         "context": "Editor && vim_mode == insert",
         "bindings": {}
-    },
-    {
-        "bindings": {
-            "alt-1": "project_panel::Toggle"
-        }
-    },
-    {
-        "context": "Pane",
-        "unbind": {
-            "alt-1": "project_panel::ToggleFocus"
-        }
     },
     {
         "context": "!Editor && !Terminal",
