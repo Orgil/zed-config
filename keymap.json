@@ -30,7 +30,8 @@
                     "focus": true
                 }
             ],
-            "space space": "editor::ToggleFold"
+            "space space": "editor::ToggleFold",
+            ", z z": "workspace::ToggleCenteredLayout"
         }
     },
     {
@@ -132,6 +133,13 @@
         "context": "(vim_mode == helix_normal || vim_mode == helix_select) && !menu",
         "unbind": {
             "space f": "file_finder::Toggle"
+        }
+    },
+    {
+        "context": "FileFinder",
+        "bindings": {
+            "ctrl-v": "pane::SplitRight",
+            "ctrl-i": "pane::SplitDown"
         }
     }
 ]
