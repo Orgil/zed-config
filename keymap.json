@@ -61,13 +61,11 @@
         }
     },
     {
-        "context": "VimControl && !menu && vim_mode == normal",
+        "context": "VimControl && !menu",
         "bindings": {
             "w": "vim::NextSubwordStart",
             "b": "vim::PreviousSubwordStart",
-            "e": "vim::NextSubwordEnd",
-            "] ]": "editor::GoToDiagnostic",
-            "[ [": "editor::GoToPreviousDiagnostic"
+            "e": "vim::NextSubwordEnd"
         }
     },
     {
@@ -100,7 +98,9 @@
             "ctrl-h": "workspace::ActivatePaneLeft",
             "ctrl-j": "workspace::ActivatePaneDown",
             "ctrl-k": "workspace::ActivatePaneUp",
-            "ctrl-l": "workspace::ActivatePaneRight"
+            "ctrl-l": "workspace::ActivatePaneRight",
+            "] ]": "editor::GoToDiagnostic",
+            "[ [": "editor::GoToPreviousDiagnostic"
         }
     },
     {
@@ -170,10 +170,9 @@
         }
     },
     {
-        "context": "FileFinder",
         "bindings": {
-            "ctrl-v": "pane::SplitRight",
-            "ctrl-i": "pane::SplitDown"
+            "ctrl-shift-v": "pane::SplitRight",
+            "ctrl-shift-i": "pane::SplitDown"
         }
     }
 ]
